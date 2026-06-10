@@ -1,6 +1,6 @@
 # LogiCode — Aprende Lógica de Programación
 
-Aplicación web interactiva para aprender lógica de programación, basada en el enfoque del libro *Introducción a la Lógica* (2020).
+Aplicación web interactiva para aprender lógica de programación
 
 ## Contenido del curso
 
@@ -84,3 +84,21 @@ Contenido alineado con temas típicos de introducción a la lógica de programac
 - Resolución de problemas con algoritmos
 - Estructuras de control y datos
 - Programación orientada a objetos (clases, atributos, métodos)
+
+## Créditos y derechos de autor
+
+### Obra de referencia
+
+**Introducción a la Lógica de Programación** (2017/2020)  
+Jorge O. Herrera M., Julián E. Gutiérrez P., Robinson Pulgarín G.
+
+Los ejercicios del libro, la estructura temática y los conceptos de pseudocódigo provienen de esa obra. **Todos los derechos de la publicación pertenecen a sus autores y editoriales correspondientes.**
+
+### Sobre LogiCode
+
+LogiCode es un **proyecto educativo independiente** creado por **Juanpasawicki**, con el objetivo de que todas las personas puedan aprender lógica de programación de forma gratuita y práctica.
+
+- **Ejercicios del libro:** basados en la obra citada, con reconocimiento y agradecimiento a los autores.
+- **Lecciones, prácticas y banco de algoritmos:** contenido complementario original de esta aplicación, inspirado en los temas del libro.
+
+LogiCode **no está afiliado, respaldado ni patrocinado** por los autores ni por la editorial del libro.

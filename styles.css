@@ -201,6 +201,69 @@ body {
 
 .sidebar-footer em { color: var(--accent); font-style: normal; }
 .sidebar-footer .book-ref { margin-top: 0.25rem; font-size: 0.65rem; }
+.sidebar-footer .credits-thanks { margin-top: 0.35rem; font-size: 0.6rem; line-height: 1.4; }
+
+.credits-section {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.credits-section h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1.25rem;
+  color: var(--text);
+}
+
+.credits-block {
+  margin-bottom: 1.25rem;
+}
+
+.credits-block:last-child { margin-bottom: 0; }
+
+.credits-block h4 {
+  font-size: 0.85rem;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.credits-block p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.credits-thanks {
+  color: var(--text) !important;
+  font-style: italic;
+}
+
+.credits-legal {
+  font-size: 0.8rem !important;
+  opacity: 0.85;
+}
+
+.credits-inline {
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.25rem;
+  background: var(--bg-elevated);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius-sm);
+}
+
+.credits-inline p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.credits-inline em { color: var(--accent); font-style: normal; }
 
 .sidebar-tools {
   padding: 0.5rem;

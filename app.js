@@ -219,6 +219,38 @@ function renderSidebar() {
   });
 }
 
+function renderCreditsSection(compact = false) {
+  const m = BOOK_META;
+  const a = ATTRIBUTION;
+  if (compact) {
+    return `
+      <div class="credits-compact">
+        <p>© ${m.year} — <em>${m.title}</em></p>
+        <p class="book-ref">${m.authorsShort}</p>
+        <p class="credits-thanks">Gracias a los autores por su obra. ${a.appName} es un proyecto educativo de ${a.creator}.</p>
+      </div>
+    `;
+  }
+  return `
+    <section class="credits-section">
+      <h3>Créditos y derechos de autor</h3>
+      <div class="credits-block">
+        <h4>Obra de referencia</h4>
+        <p><strong>${m.title}</strong> (${m.year})</p>
+        <p>${m.authors}</p>
+        <p class="credits-legal">${a.bookCredit}</p>
+      </div>
+      <div class="credits-block">
+        <h4>Sobre ${a.appName}</h4>
+        <p>${a.purpose}</p>
+        <p>${a.originalContent}</p>
+        <p class="credits-thanks">Agradezco profundamente a los autores del libro por los conocimientos que han brindado a estudiantes y docentes. Esta aplicación es mi forma de compartir ese aprendizaje con más personas.</p>
+        <p class="credits-legal">${a.disclaimer}</p>
+      </div>
+    </section>
+  `;
+}
+
 function updateProgressUI() {
   const { total, completed, percent } = getProgressStats();
   document.getElementById('progress-percent').textContent = `${percent}%`;
@@ -277,6 +309,8 @@ function renderHome() {
         `;
       }).join('')}
     </div>
+
+    ${renderCreditsSection()}
   `;
 }
 
@@ -584,6 +618,9 @@ function renderBookExercises() {
       <h2>Ejercicios propuestos</h2>
       <p>${BOOK_META.title} — ${BOOK_META.authors}. ${done} de ${total} marcados como resueltos.</p>
       <p class="book-note">${BOOK_META.note}</p>
+    </div>
+    <div class="credits-inline">
+      <p><strong>Atribución:</strong> Ejercicios basados en <em>${BOOK_META.title}</em> (${BOOK_META.year}), ${BOOK_META.authors}. ${ATTRIBUTION.bookCredit}</p>
     </div>
     <div class="book-chapters">
       ${BOOK_EXERCISES.map(ch => `

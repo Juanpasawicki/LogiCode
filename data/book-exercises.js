@@ -5,9 +5,19 @@
  */
 const BOOK_META = {
   title: 'Introducción a la Lógica de Programación',
-  authors: 'Herrera M., Gutiérrez P., Pulgarín G.',
+  authors: 'Jorge O. Herrera M., Julián E. Gutiérrez P., Robinson Pulgarín G.',
+  authorsShort: 'Herrera M., Gutiérrez P., Pulgarín G.',
   year: '2017/2020',
   note: 'Ejercicios extraídos del libro de referencia. Algunas secciones del PDF local están dañadas; los ejercicios del Cap. 2 se incluyen según el contenido del capítulo.'
+};
+
+const ATTRIBUTION = {
+  appName: 'LogiCode',
+  creator: 'Juanpasawicki',
+  purpose: 'Proyecto educativo independiente, creado para que todas las personas puedan aprender lógica de programación de forma gratuita y práctica.',
+  bookCredit: 'Los ejercicios del libro, la estructura temática y los conceptos de pseudocódigo provienen de la obra Introducción a la Lógica de Programación. Todos los derechos de esa publicación pertenecen a sus autores y editoriales correspondientes.',
+  originalContent: 'Las lecciones interactivas, las prácticas por lección y el banco de algoritmos son contenido complementario original de esta aplicación, inspirado en los temas del libro.',
+  disclaimer: 'LogiCode no está afiliado, respaldado ni patrocinado por los autores ni por la editorial del libro. Se incluye esta atribución con reconocimiento y agradecimiento a quienes compartieron ese conocimiento.'
 };
 
 const BOOK_EXERCISES = [
