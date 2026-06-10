@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LogiCode — Aprende Lógica de Programación</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="logo">
+          <span class="logo-icon">{ }</span>
+          <div>
+            <h1>LogiCode</h1>
+            <p>Lógica de Programación</p>
+          </div>
+        </div>
+        <button class="sidebar-close" id="sidebar-close" aria-label="Cerrar menú">×</button>
+      </div>
+
+      <div class="progress-card">
+        <div class="progress-header">
+          <span>Tu progreso</span>
+          <span id="progress-percent">0%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" id="progress-fill"></div>
+        </div>
+        <p class="progress-detail" id="progress-detail">0 de 0 lecciones completadas</p>
+      </div>
+
+      <nav class="sidebar-tools">
+        <button class="tool-link" data-view="home">🏠 Inicio</button>
+        <button class="tool-link" data-view="exercises">📋 Ejercicios del libro</button>
+        <button class="tool-link" data-view="algorithms">🧮 Banco de algoritmos</button>
+        <button class="tool-link" data-view="simulator">▶ Simulador</button>
+      </nav>
+
+      <nav class="chapter-nav" id="chapter-nav"></nav>
+
+      <footer class="sidebar-footer">
+        <p>Basado en <em>Introducción a la Lógica</em></p>
+        <p class="book-ref">Herrera, Gutiérrez, Pulgarín</p>
+      </footer>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="breadcrumb" id="breadcrumb">Inicio</div>
+      </header>
+
+      <div class="content" id="content"></div>
+    </main>
+  </div>
+
+  <script src="data/curriculum.js"></script>
+  <script src="data/practice-exercises.js"></script>
+  <script src="data/book-exercises.js"></script>
+  <script src="data/algorithm-bank.js"></script>
+  <script src="simulator/pseudocode.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
